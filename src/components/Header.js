@@ -14,23 +14,35 @@ import * as React from 'react';
 // import Typography from '@mui/material/Typography';
 // import Button from '@mui/material/Button';
 // import Favorite from '@mui/icons-material/Favorite';
+import HeaderLogo from "../assets/HeaderLogo.png"
 
 function Header(){
     return(
         <div>
-            <img />
-            <button>
-                About Us
-            </button>
-            <button>
-                Services
-            </button>
-            <button>
-                Contact
-            </button>
-            <button>
-                Qet a quote
-            </button>
+            <a href="/">
+               <img src={HeaderLogo}/> 
+            </a>
+            
+            <a href='/aboutUs'>
+                <button >
+                    About Us
+                </button>
+            </a>
+            <a href='/services'>
+                <button>
+                    Services
+                </button>
+            </a>
+            <a href='/contactUs'>
+                <button>
+                    Contact
+                </button>  
+            </a>
+            {/* <a href='/about'> */}
+                <button>
+                    Qet a quote
+                </button>
+            {/* </a> */}
         </div>
     )
 };

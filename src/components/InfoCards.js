@@ -1,26 +1,20 @@
 
-function InfoCards(data,button){
-    console.log(button)
+function InfoCards({data,button,icon,dataIndex}){
+
     return(
         <div>
+            {icon? <img src={icon}/> : <></>}
             <p>
-                {/* {title} */}
+                {data[`${dataIndex}`].SectionHeader}
             </p>
             <p>
-                {/* {description} */}
+                {data[`${dataIndex}`].SectionDescription}
             </p>
-            {/* {displayButton? 
+            {button? 
                 <button>
                     Request a Quote
-                </button> : 
-                <button>
-                    I'm False
-                </button>
-            } */}
-            <div>
-                <img />
-
-            </div>
+                </button> : <></>
+            }
         </div>
     )
 }

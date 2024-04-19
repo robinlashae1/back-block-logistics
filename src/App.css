@@ -36,3 +36,9 @@
     transform: rotate(360deg);
   }
 }
+
+#heroPage-section-two{
+  background-image: url('./assets/DelawareRiverView.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
